@@ -1,0 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+workspace 'SimpleNews'
+xcodeproj 'SimpleNews'
+
+use_frameworks!
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end
+
+pod 'AFNetworking', '~> 3.0'
+pod 'SDWebImage','~>3.7'
+pod 'MJRefresh'
+pod 'FMDB', '~> 2.6.2'
