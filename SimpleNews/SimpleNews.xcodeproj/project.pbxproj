@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1F7F814D1E1CE03A00856288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F814C1E1CE03A00856288 /* AppDelegate.swift */; };
-		1F7F814F1E1CE03A00856288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F814E1E1CE03A00856288 /* ViewController.swift */; };
 		1F7F81521E1CE03A00856288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F81501E1CE03A00856288 /* Main.storyboard */; };
 		1F7F81551E1CE03A00856288 /* SimpleNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F81531E1CE03A00856288 /* SimpleNews.xcdatamodeld */; };
 		1F7F81571E1CE03A00856288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F81561E1CE03A00856288 /* Assets.xcassets */; };
 		1F7F815A1E1CE03A00856288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F81581E1CE03A00856288 /* LaunchScreen.storyboard */; };
+		1F97EF291E1F8BE1009382F8 /* MMBaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97EF261E1F8BE1009382F8 /* MMBaseAnimator.swift */; };
+		1F97EF2A1E1F8BE1009382F8 /* MMPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97EF271E1F8BE1009382F8 /* MMPopAnimator.swift */; };
+		1F97EF2B1E1F8BE1009382F8 /* MMPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97EF281E1F8BE1009382F8 /* MMPushAnimator.swift */; };
+		1F97EF2E1E1F8D49009382F8 /* GlobalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97EF2D1E1F8D49009382F8 /* GlobalParameter.swift */; };
+		1F97EF311E1F8DAA009382F8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97EF301E1F8DAA009382F8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F7F81491E1CE03A00856288 /* SimpleNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7F814C1E1CE03A00856288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F7F814E1E1CE03A00856288 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F7F81511E1CE03A00856288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F7F81541E1CE03A00856288 /* SimpleNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleNews.xcdatamodel; sourceTree = "<group>"; };
 		1F7F81561E1CE03A00856288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7F81591E1CE03A00856288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F7F815B1E1CE03A00856288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F97EF261E1F8BE1009382F8 /* MMBaseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMBaseAnimator.swift; sourceTree = "<group>"; };
+		1F97EF271E1F8BE1009382F8 /* MMPopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPopAnimator.swift; sourceTree = "<group>"; };
+		1F97EF281E1F8BE1009382F8 /* MMPushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPushAnimator.swift; sourceTree = "<group>"; };
+		1F97EF2D1E1F8D49009382F8 /* GlobalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalParameter.swift; sourceTree = "<group>"; };
+		1F97EF301E1F8DAA009382F8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				1F7F814C1E1CE03A00856288 /* AppDelegate.swift */,
-				1F7F814E1E1CE03A00856288 /* ViewController.swift */,
+				1F7F81611E1CE61B00856288 /* Model */,
+				1F7F81621E1CE61B00856288 /* View */,
+				1F7F81631E1CE61B00856288 /* ViewModel */,
+				1F97EF231E1F8932009382F8 /* Global */,
+				1F97EF221E1F8923009382F8 /* Custom */,
+				1F97EF241E1F8932009382F8 /* Sources */,
+				1F97EF2C1E1F8C3F009382F8 /* Helper */,
 				1F7F81501E1CE03A00856288 /* Main.storyboard */,
 				1F7F81561E1CE03A00856288 /* Assets.xcassets */,
 				1F7F81581E1CE03A00856288 /* LaunchScreen.storyboard */,
@@ -65,6 +79,76 @@
 				1F7F81531E1CE03A00856288 /* SimpleNews.xcdatamodeld */,
 			);
 			path = SimpleNews;
+			sourceTree = "<group>";
+		};
+		1F7F81611E1CE61B00856288 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F7F81621E1CE61B00856288 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F7F81631E1CE61B00856288 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F97EF221E1F8923009382F8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1F97EF2F1E1F8DA0009382F8 /* Extensions */,
+				1F97EF251E1F8BE1009382F8 /* Transitions */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1F97EF231E1F8932009382F8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				1F97EF2D1E1F8D49009382F8 /* GlobalParameter.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		1F97EF241E1F8932009382F8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1F97EF251E1F8BE1009382F8 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				1F97EF261E1F8BE1009382F8 /* MMBaseAnimator.swift */,
+				1F97EF271E1F8BE1009382F8 /* MMPopAnimator.swift */,
+				1F97EF281E1F8BE1009382F8 /* MMPushAnimator.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		1F97EF2C1E1F8C3F009382F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1F97EF2F1E1F8DA0009382F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F97EF301E1F8DAA009382F8 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7F814F1E1CE03A00856288 /* ViewController.swift in Sources */,
+				1F97EF2E1E1F8D49009382F8 /* GlobalParameter.swift in Sources */,
 				1F7F81551E1CE03A00856288 /* SimpleNews.xcdatamodeld in Sources */,
+				1F97EF291E1F8BE1009382F8 /* MMBaseAnimator.swift in Sources */,
+				1F97EF2A1E1F8BE1009382F8 /* MMPopAnimator.swift in Sources */,
+				1F97EF2B1E1F8BE1009382F8 /* MMPushAnimator.swift in Sources */,
 				1F7F814D1E1CE03A00856288 /* AppDelegate.swift in Sources */,
+				1F97EF311E1F8DAA009382F8 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +395,7 @@
 				1F7F81601E1CE03A00856288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
