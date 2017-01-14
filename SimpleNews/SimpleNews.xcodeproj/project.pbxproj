@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0157256F12C5BE38B5C8E8BA /* Pods_SimpleNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48B95DE9E8B07692C4D36E9 /* Pods_SimpleNews.framework */; };
+		1F4DECB91E29C54400248F50 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECB81E29C54400248F50 /* NewsModel.swift */; };
+		1F4DECBB1E29C77300248F50 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECBA1E29C77300248F50 /* NewsViewModel.swift */; };
+		1F4DECBD1E29C78300248F50 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECBC1E29C78300248F50 /* NewsViewController.swift */; };
 		1F7F814D1E1CE03A00856288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F814C1E1CE03A00856288 /* AppDelegate.swift */; };
 		1F7F81521E1CE03A00856288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F81501E1CE03A00856288 /* Main.storyboard */; };
 		1F7F81551E1CE03A00856288 /* SimpleNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F81531E1CE03A00856288 /* SimpleNews.xcdatamodeld */; };
@@ -20,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4DECB81E29C54400248F50 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		1F4DECBA1E29C77300248F50 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		1F4DECBC1E29C78300248F50 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		1F7F81491E1CE03A00856288 /* SimpleNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7F814C1E1CE03A00856288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F7F81511E1CE03A00856288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +39,9 @@
 		1F97EF281E1F8BE1009382F8 /* MMPushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPushAnimator.swift; sourceTree = "<group>"; };
 		1F97EF2D1E1F8D49009382F8 /* GlobalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalParameter.swift; sourceTree = "<group>"; };
 		1F97EF301E1F8DAA009382F8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E4DDCD2DF01ABEF326314B23 /* Pods-SimpleNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNews/Pods-SimpleNews.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A9F1A6F4DA5015999E5FCA /* Pods-SimpleNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNews/Pods-SimpleNews.release.xcconfig"; sourceTree = "<group>"; };
+		F48B95DE9E8B07692C4D36E9 /* Pods_SimpleNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0157256F12C5BE38B5C8E8BA /* Pods_SimpleNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4DECB61E29C4D900248F50 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1F4DECB71E29C4FC00248F50 /* News */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1F4DECB71E29C4FC00248F50 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				1F4DECB81E29C54400248F50 /* NewsModel.swift */,
+				1F4DECBA1E29C77300248F50 /* NewsViewModel.swift */,
+				1F4DECBC1E29C78300248F50 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		1F7F81401E1CE03A00856288 = {
 			isa = PBXGroup;
 			children = (
 				1F7F814B1E1CE03A00856288 /* SimpleNews */,
 				1F7F814A1E1CE03A00856288 /* Products */,
+				E9C88186AEA4261539180039 /* Pods */,
+				9204026B034481006492D1F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1F7F814C1E1CE03A00856288 /* AppDelegate.swift */,
-				1F7F81611E1CE61B00856288 /* Model */,
-				1F7F81621E1CE61B00856288 /* View */,
-				1F7F81631E1CE61B00856288 /* ViewModel */,
+				1F4DECB61E29C4D900248F50 /* Main */,
 				1F97EF231E1F8932009382F8 /* Global */,
 				1F97EF221E1F8923009382F8 /* Custom */,
 				1F97EF241E1F8932009382F8 /* Sources */,
@@ -79,27 +108,6 @@
 				1F7F81531E1CE03A00856288 /* SimpleNews.xcdatamodeld */,
 			);
 			path = SimpleNews;
-			sourceTree = "<group>";
-		};
-		1F7F81611E1CE61B00856288 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1F7F81621E1CE61B00856288 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1F7F81631E1CE61B00856288 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1F97EF221E1F8923009382F8 /* Custom */ = {
@@ -151,6 +159,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9204026B034481006492D1F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48B95DE9E8B07692C4D36E9 /* Pods_SimpleNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C88186AEA4261539180039 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DDCD2DF01ABEF326314B23 /* Pods-SimpleNews.debug.xcconfig */,
+				E8A9F1A6F4DA5015999E5FCA /* Pods-SimpleNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F7F815E1E1CE03A00856288 /* Build configuration list for PBXNativeTarget "SimpleNews" */;
 			buildPhases = (
+				355C7815687604B7631A2EFF /* [CP] Check Pods Manifest.lock */,
 				1F7F81451E1CE03A00856288 /* Sources */,
 				1F7F81461E1CE03A00856288 /* Frameworks */,
 				1F7F81471E1CE03A00856288 /* Resources */,
+				BBA7C0176A6EEF335B32649E /* [CP] Embed Pods Frameworks */,
+				80B97AC8E983BBB463DB0044 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +248,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		355C7815687604B7631A2EFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80B97AC8E983BBB463DB0044 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNews/Pods-SimpleNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA7C0176A6EEF335B32649E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNews/Pods-SimpleNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F7F81451E1CE03A00856288 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4DECB91E29C54400248F50 /* NewsModel.swift in Sources */,
+				1F4DECBB1E29C77300248F50 /* NewsViewModel.swift in Sources */,
 				1F97EF2E1E1F8D49009382F8 /* GlobalParameter.swift in Sources */,
+				1F4DECBD1E29C78300248F50 /* NewsViewController.swift in Sources */,
 				1F7F81551E1CE03A00856288 /* SimpleNews.xcdatamodeld in Sources */,
 				1F97EF291E1F8BE1009382F8 /* MMBaseAnimator.swift in Sources */,
 				1F97EF2A1E1F8BE1009382F8 /* MMPopAnimator.swift in Sources */,
@@ -350,6 +429,7 @@
 		};
 		1F7F815F1E1CE03A00856288 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DDCD2DF01ABEF326314B23 /* Pods-SimpleNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8EHU4VV58X;
@@ -364,6 +444,7 @@
 		};
 		1F7F81601E1CE03A00856288 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A9F1A6F4DA5015999E5FCA /* Pods-SimpleNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8EHU4VV58X;

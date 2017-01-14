@@ -25,15 +25,15 @@ class MMPushAnimator: MMBaseAnimator, UIViewControllerAnimatedTransitioning {
         toVC!.view.frame.origin.x = screenWidth
         
         blackMask = UIView(frame: CGRectMake(0, 0, screenWidth, screenHeight))
-        blackMask.backgroundColor = Color_Black
+        blackMask.backgroundColor = UIColor.blackColor()
         blackMask.alpha = 0
         container.insertSubview(blackMask, aboveSubview: fromVC!.view)
 
-        if toVC!.hideBaseTabbarWhenPushed == true {
-            let tabbarVC = fromVC!.tabBarController as! BaseTabbarController
-            self.customTabbar = tabbarVC.customTabbar
-            fromVC!.view.addSubview(self.customTabbar)
-        }
+//        if toVC!.hideBaseTabbarWhenPushed == true {
+//            let tabbarVC = fromVC!.tabBarController as! BaseTabBarViewController
+//            self.customTabbar = tabbarVC.customTabbar
+//            fromVC!.view.addSubview(self.customTabbar)
+//        }
         
         UIView.animateKeyframesWithDuration(duration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: { () -> Void in
             let scale: CGFloat = 0.95
