@@ -107,3 +107,14 @@ extension UIViewController {
         }
     }
 }
+
+//MARK: - CGFloat扩展方法
+extension CGFloat {
+    var scale_H: CGFloat {
+        return  self * UIScreen.screen_Height / 667
+    }
+    
+    var scale_W: CGFloat {
+        return  self * UIScreen.screen_Width / 375
+    }
+}

@@ -15,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        // 设置窗口
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // 设置窗口根控制器
+        let newVC = NewsViewController()
+        let nav = BaseNavViewController(rootViewController: newVC)
+        self.window!.rootViewController = nav
+        // 窗口显示
+        self.window?.makeKeyAndVisible()
         return true
     }
 

@@ -23,6 +23,8 @@ let color_Clear = UIColor.clearColor()
 
 //MARK: - 项目简化UIColor
 let color_333333 = UIColor.colorWithHexCode("333333")
+let color_f2f2f2 = UIColor.colorWithHexCode("F2F2F2")
 
 //MARK: - 全局默认参数
-let navBarColor = UIColor.colorWithHexCode("333333")
+let navbar_color = color_333333
+let baseview_color = color_f2f2f2

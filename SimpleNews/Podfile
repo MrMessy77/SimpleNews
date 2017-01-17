@@ -1,6 +1,7 @@
 use_frameworks!
-
 target 'SimpleNews' do
-pod 'RxSwift',    '~> 2.0'
-pod 'RxCocoa',    '~> 2.0'
+    pod 'RxSwift', '~> 2.0'
+    pod 'RxCocoa', '~> 2.0'
+    pod 'SnapKit', '0.22.0'
+    pod 'WHC_AutoLayoutKit_Swift2_3', '~> 2.6.5'
 end

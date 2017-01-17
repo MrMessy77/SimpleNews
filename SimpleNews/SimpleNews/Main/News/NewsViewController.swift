@@ -8,28 +8,38 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let tableView = UITableView()
+        tableView.separatorStyle = .None
+        tableView.backgroundColor = color_Clear
+        tableView.tableFooterView = UIView()
+        view.addSubview(tableView)
+        tableView.snp_makeConstraints { (make) in
+            make.center.equalTo(view.snp_center)
+            make.size.equalTo(view.bounds.size)
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewCell
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
