@@ -6,10 +6,10 @@
 //  Copyright © 2017年 MrMessy. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class NewsModel: NSObject {
-
+struct NewsModel {
+    
     var title: String!
     var pic: String!
     var dec: String!

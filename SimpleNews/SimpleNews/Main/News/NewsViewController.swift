@@ -8,34 +8,19 @@
 
 import UIKit
 
-class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class NewsViewController: BaseViewController {
 
+    var newsView: NewsView!
+    let newsViewModel = NewsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tableView = UITableView()
-        tableView.separatorStyle = .None
-        tableView.backgroundColor = color_Clear
-        tableView.tableFooterView = UIView()
-        view.addSubview(tableView)
-        tableView.snp_makeConstraints { (make) in
-            make.center.equalTo(view.snp_center)
-            make.size.equalTo(view.bounds.size)
-        }
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return UITableViewCell
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //初始化子视图
+        newsView = NewsView(view: self.view)
         
+        //数据初始化
+        newsViewModel.prepare(newsView.tableView)
     }
 
     override func didReceiveMemoryWarning() {

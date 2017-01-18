@@ -8,14 +8,14 @@
 
 import UIKit
 
-class NewsView: UIView {
+class NewsView: BaseTableView {
 
-//    convenience initframe() {
-//        self.init()
-//    }
-    
-    convenience init() {
+    convenience init(view: UIView) {
         self.init()
+        view.addSubview(self)
+        self.mm_CenterEqual(view).mm_SizeEqual(view)
+        //注册cell信息
+        self.tableView.registerClass(NewsCell.self, forCellReuseIdentifier: "NewsCell")
     }
 }
 

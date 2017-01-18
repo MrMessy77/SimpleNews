@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0157256F12C5BE38B5C8E8BA /* Pods_SimpleNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48B95DE9E8B07692C4D36E9 /* Pods_SimpleNews.framework */; };
 		1F279FE61E2DB81000555093 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F279FE51E2DB81000555093 /* BaseViewController.swift */; };
+		1F2EDF081E2F2AE10063576A /* AutoLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EDF071E2F2AE10063576A /* AutoLayoutManager.swift */; };
+		1F2EDF0A1E2F352D0063576A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EDF091E2F352D0063576A /* BaseViewModel.swift */; };
+		1F2EDF0C1E2F5B310063576A /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EDF0B1E2F5B310063576A /* BaseTableView.swift */; };
 		1F4DECB91E29C54400248F50 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECB81E29C54400248F50 /* NewsModel.swift */; };
 		1F4DECBB1E29C77300248F50 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECBA1E29C77300248F50 /* NewsViewModel.swift */; };
 		1F4DECBD1E29C78300248F50 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DECBC1E29C78300248F50 /* NewsViewController.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		1F279FE51E2DB81000555093 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1F2EDF071E2F2AE10063576A /* AutoLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutManager.swift; sourceTree = "<group>"; };
+		1F2EDF091E2F352D0063576A /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1F2EDF0B1E2F5B310063576A /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		1F4DECB81E29C54400248F50 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		1F4DECBA1E29C77300248F50 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		1F4DECBC1E29C78300248F50 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9BAEAB1E2C674400AF76F3 /* SnapkitManager.swift */,
+				1F2EDF071E2F2AE10063576A /* AutoLayoutManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 				1F9BAEB21E2CBF1600AF76F3 /* BaseTabBarController.swift */,
 				1F9BAEB41E2CBF5C00AF76F3 /* BaseNavViewController.swift */,
 				1F279FE51E2DB81000555093 /* BaseViewController.swift */,
+				1F2EDF091E2F352D0063576A /* BaseViewModel.swift */,
+				1F2EDF0B1E2F5B310063576A /* BaseTableView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -338,7 +347,9 @@
 				1F9BAEB31E2CBF1600AF76F3 /* BaseTabBarController.swift in Sources */,
 				1F9BAEAC1E2C674400AF76F3 /* SnapkitManager.swift in Sources */,
 				1F4DECB91E29C54400248F50 /* NewsModel.swift in Sources */,
+				1F2EDF081E2F2AE10063576A /* AutoLayoutManager.swift in Sources */,
 				1F4DECBB1E29C77300248F50 /* NewsViewModel.swift in Sources */,
+				1F2EDF0A1E2F352D0063576A /* BaseViewModel.swift in Sources */,
 				1F97EF2E1E1F8D49009382F8 /* GlobalParameter.swift in Sources */,
 				1F9BAEB51E2CBF5C00AF76F3 /* BaseNavViewController.swift in Sources */,
 				1F4DECBD1E29C78300248F50 /* NewsViewController.swift in Sources */,
@@ -351,6 +362,7 @@
 				1F279FE61E2DB81000555093 /* BaseViewController.swift in Sources */,
 				1F7F814D1E1CE03A00856288 /* AppDelegate.swift in Sources */,
 				1F97EF311E1F8DAA009382F8 /* Extensions.swift in Sources */,
+				1F2EDF0C1E2F5B310063576A /* BaseTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +485,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8EHU4VV58X;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = SimpleNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
